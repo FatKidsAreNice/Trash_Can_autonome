@@ -35,13 +35,20 @@ Software-Module
 
 Das Projekt ist modular aufgebaut, um Wartbarkeit und Austauschbarkeit zu gewährleisten:
 Datei	Beschreibung
-main.py	Einstiegspunkt. Initialisiert Hardware, startet den Main-Loop und synchronisiert Vision und Aktorik.
-yolo_detector.py	Perzeption. Wrapper für das YOLO-Modell. Filtert Ergebnisse nach Klasse, Konfidenz und Randbereich.
-tracker_logic.py	Gedächtnis. Implementiert Centroid Tracking. Ordnet neuen Detektionen IDs zu und speichert verlorene Objekte kurzzeitig in einer History.
-robot_brain.py	Regelung. Berechnet Lenkwinkel (P-Regler) und Geschwindigkeit basierend auf der Position und Größe des Zielobjekts.
-config.py	Konfiguration. Zentrale Datei für Konstanten, Pfade und Tuning-Parameter.
-gui.py	Visualisierung. Zeichnet Bounding Boxes, Status-Infos und die "Exit Zone" zur Fehleranalyse in das Videobild.
-motor_test.py	Diagnose. Standalone-Skript zum Testen der seriellen Verbindung und der Motoren.
+
+- main.py	Einstiegspunkt. Initialisiert Hardware, startet den Main-Loop und synchronisiert Vision und Aktorik.
+  
+- yolo_detector.py	Perzeption. Wrapper für das YOLO-Modell. Filtert Ergebnisse nach Klasse, Konfidenz und Randbereich.
+  
+- tracker_logic.py	Gedächtnis. Implementiert Centroid Tracking. Ordnet neuen Detektionen IDs zu und speichert verlorene Objekte kurzzeitig in einer History.
+  
+- robot_brain.py	Regelung. Berechnet Lenkwinkel (P-Regler) und Geschwindigkeit basierend auf der Position und Größe des Zielobjekts.
+  
+- config.py	Konfiguration. Zentrale Datei für Konstanten, Pfade und Tuning-Parameter.
+  
+- gui.py	Visualisierung. Zeichnet Bounding Boxes, Status-Infos und die "Exit Zone" zur Fehleranalyse in das Videobild.
+  
+- motor_test.py	Diagnose. Standalone-Skript zum Testen der seriellen Verbindung und der Motoren.
 
 
 Algorithmische Details
