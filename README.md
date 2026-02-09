@@ -3,7 +3,7 @@ KI-basierter Autonomer Verfolgungs-Roboter (AI Object Tracker)
 
 Dieses Projekt implementiert ein autonomes Robotersystem, das in der Lage ist, spezifische Objekte (z. B. Flaschen, Bälle) in Echtzeit zu erkennen und ihnen physikalisch zu folgen. Das System kombiniert Computer Vision (YOLO) auf einem Edge-Device (Nvidia Jetson) mit einer Mikrocontroller-basierten Motorsteuerung (Arduino).
 
-Systemarchitektur
+#Systemarchitektur#
 
 Das System folgt einem klassischen Sense-Think-Act-Paradigma, verteilt auf zwei Hardware-Ebenen:
 
