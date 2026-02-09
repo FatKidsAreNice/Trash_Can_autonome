@@ -3,7 +3,7 @@ KI-basierter Autonomer Verfolgungs-Roboter (AI Object Tracker)
 
 Dieses Projekt implementiert ein autonomes Robotersystem, das in der Lage ist, spezifische Objekte (z. B. Flaschen, Bälle) in Echtzeit zu erkennen und ihnen physikalisch zu folgen. Das System kombiniert Computer Vision (YOLO) auf einem Edge-Device (Nvidia Jetson) mit einer Mikrocontroller-basierten Motorsteuerung (Arduino).
 
-#Systemarchitektur#
+# Systemarchitektur
 
 Das System folgt einem klassischen Sense-Think-Act-Paradigma, verteilt auf zwei Hardware-Ebenen:
 
@@ -21,7 +21,7 @@ Das System folgt einem klassischen Sense-Think-Act-Paradigma, verteilt auf zwei 
 
        - Wandelt Vektoren in PWM-Signale für die Motortreiber um.
 
- Hardware-Anforderungen
+ # Hardware-Anforderungen
 
    - Recheneinheit: Nvidia Jetson Nano / Orin Nano (für GPU-beschleunigte Inferenz).
 
@@ -31,7 +31,7 @@ Das System folgt einem klassischen Sense-Think-Act-Paradigma, verteilt auf zwei 
 
    - Aktorik: Roboter-Chassis mit DC-Motoren und Motortreiber.
 
-Software-Module
+# Software-Module
 
 Das Projekt ist modular aufgebaut, um Wartbarkeit und Austauschbarkeit zu gewährleisten:
 Datei	Beschreibung
@@ -51,7 +51,7 @@ Datei	Beschreibung
 - motor_test.py	Diagnose. Standalone-Skript zum Testen der seriellen Verbindung und der Motoren.
 
 
-Algorithmische Details
+# Algorithmische Details
 
 1. Objekterkennung & Filterung
 
@@ -77,7 +77,7 @@ Der RobotBrain nutzt einen einfachen Regelkreis:
 
    - Gas: Abhängig von der Objektgröße (Distanz). Ist das Objekt kleiner als TARGET_WIDTH_RATIO (40% Bildbreite), nähert sich der Roboter an.
 
-Installation & Nutzung
+# Installation & Nutzung
 Voraussetzungen
 
    1. Python 3.8+
@@ -107,7 +107,7 @@ Steuerung
 
    - f: Autofokus manuell triggern.
 
- Konfiguration (config.py)
+ # Konfiguration (config.py)
 
 Wichtige Tuning-Parameter für Anpassungen an die Umgebung:
 
