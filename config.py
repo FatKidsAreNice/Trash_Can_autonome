@@ -34,4 +34,4 @@ RECOVERY_DISTANCE = 500     # Suchradius für Wiederfinden nach Verdeckung
 HISTORY_DURATION = 5.0      # Zeit in Sekunden für das "Gedächtnis" des Trackers
 
 # --- Inferenz Parameter ---
-CONFIDENCE_THRESHOLD = 0.7 # Nur sichere Erkennungen zulassen
+CONFIDENCE_THRESHOLD = 0.8 # Nur sichere Erkennungen zulassen
