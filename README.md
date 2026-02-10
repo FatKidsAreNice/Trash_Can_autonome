@@ -99,7 +99,7 @@ Starten des Systems
     Hauptprogramm: Starten Sie den Tracker mit Angabe des I2C-Bus für den Fokus.
     Bash
 
-    python3 main.py -i 9
+    sudo python3 main.py -i 9
 
 Steuerung
 
