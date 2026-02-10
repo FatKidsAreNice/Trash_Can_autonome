@@ -53,7 +53,7 @@ signal.signal(signal.SIGTERM, sigint_handler)
 def parse_cmdline():
     """Verarbeitet Kommandozeilenargumente (z.B. I2C-Bus ID für den Fokus)."""
     parser = argparse.ArgumentParser(description='Arducam YOLO Object Tracker')
-    parser.add_argument('-i', '--i2c-bus', type=int, required=True, help='I2C Bus (meist 6, 7 oder 8)')
+    parser.add_argument('-i', '--i2c-bus', type=int, required=True, help='I2C Bus (meistens 9)')
     parser.add_argument('-v', '--verbose', action="store_true")
     return parser.parse_args()
 
