@@ -25,7 +25,7 @@ Das System folgt einem klassischen Sense-Think-Act-Paradigma, verteilt auf zwei 
 
    - Recheneinheit: Nvidia Jetson Nano / Orin Nano (für GPU-beschleunigte Inferenz).
 
-   - Kamera: Arducam IMX219 oder vergleichbare CSI/USB-Kamera mit Fokus-Steuerung.
+   - Kamera: Arducam IMX519 oder vergleichbare CSI/USB-Kamera mit Fokus-Steuerung.
 
    - Mikrocontroller: Arduino Uno/Nano (verbunden via USB /dev/ttyACM0).
 
